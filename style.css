@@ -1,57 +1,101 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
 .container__dados {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header {
-    background-color: #65aefd;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    display: block;
-    align-items: center;
-    align-content: center;
+  background-color: #255385;
+  color: #fff;
+  padding: 1px;
+  display: block;
+  align-items: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .lupa {
-    width: 40px;
-    height: auto;
-    vertical-align: text-bottom;
+  width: 40px;
+  height: auto;
+  vertical-align: text-bottom;
+}
+
+.container__dados h2 {
+  justify-content: center;
+  text-align: center;
 }
 
 .post {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction:row;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.post .texto {
+  align-items: center;
 }
 
 .post h2 {
-    margin-top: 0;
-    color: #333;
+  margin-top: 0;
+  color: #333;
+  text-align: center;
 }
 
 .post img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 10px;
-    object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.filmes {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filmes h3 {
+  justify-content: center; /* Centraliza o grid horizontalmente */
+  text-align: center; /* Alinha o texto centralmente */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.filmes ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Três colunas iguais */
+  gap: 10px; /* Espaçamento entre as células do grid */
+  justify-content: center; /* Centraliza o grid horizontalmente */
+  text-align: center; /* Alinha o texto centralmente */
+  list-style: none; /* Remove a marcação padrão da lista */
+  padding: 0;
+}
+
+.filmes ul li {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.filmes ul h3 {
+  grid-column: 1 / -1; /* Ocupa todas as colunas */
+  margin-top: 20px; /* Espaçamento superior */
 }
 
 .footer {
-    background-color: #65aefd;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  margin-top: 20px;
+  background-color: #255385;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
